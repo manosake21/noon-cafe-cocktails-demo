@@ -1,7 +1,171 @@
-<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Noon — Cafe & Cocktails</title><style>body{margin:0;font-family:system-ui,sans-serif;background:#101114;color:#f5f4ef}header{padding:26px 7%;display:flex;justify-content:space-between}.hero{padding:100px 7%;background:#1b2431}.hero h1{font-size:clamp(48px,8vw,88px);max-width:850px}.hero p{font-size:20px;line-height:1.6;max-width:650px;color:#d8dbe0}.cta{display:inline-block;padding:14px 22px;background:#f0bd59;color:#15171b;text-decoration:none;border-radius:999px;font-weight:700}.grid{padding:60px 7%;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{background:#191b20;padding:30px;border-radius:18px}.demo{font-size:12px;opacity:.65}footer{padding:40px 7%;background:#090a0c}</style><style>.visit-cta{padding:56px 24px;max-width:900px;margin:auto}.visit-cta div{display:flex;gap:12px;flex-wrap:wrap}.visit-cta a{margin-top:8px}.visit-cta h2{margin-bottom:12px}</style></head><body><header><strong>NOON</strong><span>CAFE & COCKTAILS</span></header><section class="hero"><div class="demo"></div><h1>From first coffee to last cocktail.</h1><p>A dark, editorial landing page concept designed around the day-to-night experience.</p><a class="cta" href="tel:+302310284212">Call 2310 284212</a></section><section class="grid"><div class="card"><h2>Day</h2><p>Coffee, brunch and easy daytime discovery.</p></div><div class="card"><h2>Night</h2><p>Cocktails, atmosphere and a clear reason to visit.</p></div><div class="card"><h2>Find us</h2><p>Mitropoleos 51, Thessaloniki 546 23</p></div></section><footer><strong>NOON</strong><p>2310 284212</p><div class="demo"></div></footer>
-<section id="contact" style="padding:2rem 1.25rem;max-width:900px;margin:0 auto">
-  <h2>Επικοινωνία</h2>
-  <p><strong>Τηλέφωνο:</strong> <a href="tel:+302310284212">+30 231 028 4212</a></p>
-  
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Noon — Café & Cocktails</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --color-day:#f5e9d3;
+  --color-night:#2c3e50;
+  --color-primary:#d4a76a;
+  --color-bg:#101114;
+  --color-text:#f5f4ef;
+  --font-heading:"Playfair Display",serif;
+  --font-body:"Roboto",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font-body);
+  background:var(--color-bg);
+  color:var(--color-text);
+  line-height:1.6;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+header{
+  padding:1.5rem 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.4);
+}
+header strong{
+  font-family:var(--font-heading);
+  font-size:1.8rem;
+  letter-spacing:2px;
+}
+header span{
+  font-size:0.9rem;
+  opacity:0.8;
+}
+.hero{
+  min-height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  padding:0 5%;
+  background:linear-gradient(135deg,var(--color-day) 0%,var(--color-night) 100%);
+  color:var(--color-bg);
+  text-shadow:0 1px 3px rgba(0,0,0,0.3);
+}
+.hero h1{
+  font-family:var(--font-heading);
+  font-size:clamp(2.5rem,10vw,5rem);
+  margin-bottom:0.5rem;
+}
+.hero p{
+  font-size:1.125rem;
+  max-width:600px;
+}
+.cta-btn{
+  margin-top:1.5rem;
+  display:inline-block;
+  padding:0.75rem 1.5rem;
+  background:var(--color-primary);
+  color:#15171b;
+  border-radius:999px;
+  font-weight:500;
+  font-size:1rem;
+}
+section{
+  padding:4rem 5%;
+}
+.grid{
+  display:grid;
+  gap:2rem;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+.card{
+  background:rgba(255,255,255,0.07);
+  border-radius:12px;
+  padding:2rem;
+  text-align:center;
+}
+.card h2{
+  font-family:var(--font-heading);
+  font-size:1.5rem;
+  margin-bottom:0.75rem;
+}
+.card p{
+  font-size:1rem;
+}
+.map-link{
+  display:inline-flex;
+  align-items:center;
+  gap:0.5rem;
+  margin-top:1rem;
+  color:var(--color-primary);
+}
+footer{
+  background:#090a0c;
+  padding:2rem 5%;
+  text-align:center;
+  font-size:0.9rem;
+}
+footer strong{
+  font-family:var(--font-heading);
+  font-size:1.4rem;
+}
+@media (max-width:600px){
+  header{flex-direction:column;gap:0.5rem;}
+  .hero{align-items:center;text-align:center;}
+}
+</style>
+</head>
+<body>
+<header>
+  <strong>NOON</strong>
+  <span>CAFÉ &amp; COCKTAILS</span>
+</header>
+
+<section class="hero" aria-label="Hero">
+  <h1>Από το πρώτο καφέ μέχρι το τελευταίο κοκτέιλ.</h1>
+  <p>Μια ατμόσφαιρα που μεταβαίνει από το φως της ημέρας στο ζωντανό νύχτα, εμπνευσμένη από τις γειτονιές της Θεσσαλονίκης.</p>
+  <a class="cta-btn" href="tel:+302310284212" aria-label="Καλέστε το Noon">Κάλεσε 2310 284212</a>
 </section>
-<section id="visit" class="visit-cta"><h2>Μια στάση που αξίζει.</h2><p>Όταν ψάχνεις πού να πας, οι σωστές πληροφορίες κάνουν την απόφαση πιο εύκολη. Δες το σημείο και έλα να το γνωρίσεις.</p><div><a href="https://maps.google.com/?cid=10066638869509913268" target="_blank" rel="noopener">Δες τη διαδρομή στο Google Maps</a><a href="tel:2310284212">Κάλεσε · 231 028 4212</a></div></section></body></html>
+
+<section class="grid" aria-label="Our offerings">
+  <div class="card">
+    <h2>Ημέρα</h2>
+    <p>Καφές, brunch και χαλαρή ανακάλυψη.</p>
+  </div>
+  <div class="card">
+    <h2>Νύχτα</h2>
+    <p>Κοκτέιλ, ατμόσφαιρα και ένας καλός λόγος για να επισκεφθείς.</p>
+  </div>
+  <div class="card">
+    <h2>Βρες μας</h2>
+    <p>Μιτρόπολεως 51, Θεσσαλονίκη 546 23</p>
+    <a class="map-link" href="https://maps.google.com/?cid=10066638869509913268" target="_blank" rel="noopener" aria-label="Δες τη διαδρομή στο Google Maps">
+      📍 Δες τη διαδρομή
+    </a>
+  </div>
+</section>
+
+<section id="contact" aria-labelledby="contact-heading">
+  <h2 id="contact-heading" style="font-family:var(--font-heading);font-size:1.8rem;margin-bottom:1rem;">Επικοινωνία</h2>
+  <p><strong>Τηλέφωνο:</strong> <a href="tel:+302310284212">+30 231 028 4212</a></p>
+</section>
+
+<section id="visit" aria-labelledby="visit-heading" style="background:rgba(255,255,255,0.05);border-radius:12px;">
+  <h2 id="visit-heading" style="font-family:var(--font-heading);font-size:1.8rem;margin-bottom:0.5rem;">Μια στάση που αξίζει.</h2>
+  <p>Όταν ψάχνεις πού να πας, οι σωστές πληροφορίες κάνουν την απόφαση πιο εύκολη. Δες το σημείο και έλα να το γνωρίσεις.</p>
+  <div style="margin-top:1rem;">
+    <a class="map-link" href="https://maps.google.com/?cid=10066638869509913268" target="_blank" rel="noopener">Δες τη διαδρομή στο Google Maps</a>
+    <a class="map-link" href="tel:+302310284212">Κάλεσε · 231 028 4212</a>
+  </div>
+</section>
+
+<footer>
+  <strong>NOON</strong>
+  <p>2310 284212 • Μιτρόπολεως 51, Θεσσαλονίκη 546 23</p>
+  <p>&copy; 2024 Noon – Όλα τα δικαιώματα διατηρούνται.</p>
+</footer>
+</body>
+</html>
